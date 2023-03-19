@@ -30,11 +30,14 @@ public class MainActivity extends AppCompatActivity {
     private void rollDice() {
         // Create new Dice oject with 6 sides and roll it
         Dice dice = new Dice(6);
-        int diceRoll = dice.roll();
+        int diceRoll = dice.roll();     // Dice 1
+        int diceRoll2 = dice.roll();    //Dice 2
 
         // Update the screen with the dice roll
         TextView resultTextView = findViewById(R.id.textView);
+        TextView result2TextView = findViewById(R.id.Dice2);
         resultTextView.setText(Integer.toString(diceRoll));
+        result2TextView.setText(Integer.toString(diceRoll2));
     }
 
 }
